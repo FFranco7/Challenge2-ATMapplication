@@ -10,6 +10,7 @@ import sys
 import fire
 import questionary
 from pathlib import Path
+import csv
 
 from qualifier.utils.fileio import load_csv
 
@@ -112,14 +113,14 @@ def save_qualifying_loans(qualifying_loans):
     # YOUR CODE HERE!
     header = ["Lender", "Max Loan Amount", "Max LTV", "Max DTI", "Min Credit Score", "Interest Rate"]
     output_path = Path("qualifying_loans.csv")
-    csvpath = Path(output_path)
+    
     with open(output_path, 'w', newline='') as csvfile:
         csvwriter = csv.writer(csvfile)
         #Write header row first
         csvwriter.writerow(header)
         #Then write data rows
-        for row in save_qualifying_loans:
-            csvwriter.writerow(row.values())
+        for row in qualifying_loans:
+            csvwriter.writerow(row)
 
 
 def run():
@@ -127,6 +128,7 @@ def run():
 
     # Load the latest Bank data
     bank_data = load_bank_data()
+    #'./data/daily_rate_sheet.csv'
 
     # Get the applicant's information
     credit_score, debt, income, loan_amount, home_value = get_applicant_info()
@@ -142,3 +144,6 @@ def run():
 
 if __name__ == "__main__":
     fire.Fire(run)
+
+
+

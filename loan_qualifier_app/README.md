@@ -1,33 +1,33 @@
-# Project Title
+# Loan Qualifier App
 
-Just after the title, introduce your project by describing attractively what the project is about and what is the main problem that inspires you to create this project or what is the main contribution for the potential user of your project.
+This project automates decision making for credit/loan approvals instantly aiming to aid in quick and accurate decision making when it comes to approving or denying loans.
 
 ---
 
 ## Technologies
 
-Describe the technologies required to use your project such as programming languages, libraries, frameworks, and operating systems. Be sure to include the specific versions of any critical dependencies that you have used in the stable version of your project.
+Python coding language was utilized in Visual Studio to create the App. Imports such as sys, fire, questionary, path and csv files were also used along with filters and functions through modular programming. The CLI method played a key role in order to make the app interact with the customers and receive accurate input data.
 
 ---
 
 ## Installation Guide
 
-In this section, you should include detailed installation notes containing code blocks and screenshots.
+Utilize the code and files directly.
 
 ---
 
 ## Usage
 
-This section should include screenshots, code blocks, or animations explaining how to use your project.
+Utilize previously mentioned imports, filters and functions to determine if a loan should be approved or denied according to the prospect's evalution. For example, someone who is requesting a loan to purchase a home will be required to input fields such as his credit score, debt amount, loan amount, income, and home value to instantly determine if the loan will be approved or denied.
 
 ---
 
 ## Contributors
 
-In this section, list all the people who contribute to this project. You might want recruiters or potential collaborators to reach you, so include your contact email and, optionally, your LinkedIn or Twitter profile.
+Francisco Franco 
 
 ---
 
 ## License
 
-When you share a project on a repository, especially a public one, it's important to choose the right license to specify what others can and can't with your source code and files. Use this section to include the license you want to use.
+MIT License
